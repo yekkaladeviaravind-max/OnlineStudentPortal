@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal | Register</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <div class="brand-mark">SP</div>
+    <p class="eyebrow">GET STARTED</p>
+    <h1>Create account</h1>
+    <p class="muted">Register your student details below.</p>
+
+    <form id="registerForm">
+      <label for="name">Full name</label>
+      <input type="text" id="name" placeholder="Your full name" minlength="2" maxlength="80" required>
+
+      <label for="regEmail">Email address</label>
+      <input type="email" id="regEmail" placeholder="you@example.com" required>
+
+      <label for="regPassword">Password</label>
+      <input type="password" id="regPassword" placeholder="At least 8 characters" minlength="8" required>
+
+      <label for="rollNumber">Roll number</label>
+      <input type="text" id="rollNumber" placeholder="Your roll number">
+
+      <label for="department">Department</label>
+      <input type="text" id="department" placeholder="e.g. ECE">
+
+      <label for="year">Year of study</label>
+      <select id="year">
+        <option value="">Select year</option>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+      </select>
+
+      <button type="submit">Create account</button>
+    </form>
+
+    <p id="message" class="message" role="status"></p>
+    <p class="switch-link">Already registered? <a href="index.html">Login</a></p>
+  </main>
+</body>
+</html>

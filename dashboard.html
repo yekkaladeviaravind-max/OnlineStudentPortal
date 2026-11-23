@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal | Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card dashboard-card">
+    <div class="dashboard-top">
+      <div>
+        <p class="eyebrow">STUDENT AREA</p>
+        <h1>My dashboard</h1>
+      </div>
+      <button id="logoutButton" class="secondary-button" type="button">Logout</button>
+    </div>
+    <p class="muted">Your registered student information.</p>
+    <p id="message" class="message" role="status">Loading profile...</p>
+
+    <section id="profile" class="profile-grid" aria-live="polite"></section>
+  </main>
+</body>
+</html>
